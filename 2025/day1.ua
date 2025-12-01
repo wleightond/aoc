@@ -1,4 +1,4 @@
-PARSE ← ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□) 
+PARSE ← ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□)
 STEPS ← /(⊂∩°□) ≡(× ⍜°□ ⍥1⊃⌵ ±)
 COUNT ← /+ =0 ◿100 \+ ⊂50
 
@@ -10,6 +10,6 @@ COUNT PARSE TD
 COUNT STEPS PARSE TD
 ⍤. =6
 
-⊜□⊸≠@\n &fras "inputs/2025/day1.txt"
+⊜□⊸≠@\n &rs∞0
 ∩COUNT ⊃STEPS∘ PARSE
 ∩&p
