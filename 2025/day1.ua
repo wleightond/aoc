@@ -1,15 +1,15 @@
-PREP ← ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□) ⊜□⊸≠@\n
+PARSE ← ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□) 
 STEPS ← /(⊂∩°□) ≡(× ⍜°□ ⍥1⊃⌵ ±)
 COUNT ← /+ =0 ◿100 \+ ⊂50
 
-TD ← "L68\nL30\nR48\nL5\nR60\nL55\nL1\nL99\nR14\nL82"
+TD ← {"L68" "L30" "R48" "L5" "R60" "L55" "L1" "L99" "R14" "L82"}
 
-COUNT PREP TD
+COUNT PARSE TD
 ⍤. =3
 
-COUNT STEPS PREP TD
+COUNT STEPS PARSE TD
 ⍤. =6
 
-&fras "inputs/2025/day1.txt"
-∩COUNT ⊃STEPS∘ PREP
+⊜□⊸≠@\n &fras "inputs/2025/day1.txt"
+∩COUNT ⊃STEPS∘ PARSE
 ∩&p
