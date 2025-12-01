@@ -1,21 +1,15 @@
-PREP ← (
-  ⊜□⊸≠@\n
-  ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□)
-)
-UNFURL ← /(⊂∩°□) ≡(× ⍜°□ ⍥1⊃⌵ ±)
-COUNT  ← /+ =0 ◿100 \+ ⊂50
+PREP ← ≡(× ÷3-@O ⊙⋕⊃⊢↘₁ °□) ⊜□⊸≠@\n
+STEPS ← /(⊂∩°□) ≡(× ⍜°□ ⍥1⊃⌵ ±)
+COUNT ← /+ =0 ◿100 \+ ⊂50
 
 TD ← "L68\nL30\nR48\nL5\nR60\nL55\nL1\nL99\nR14\nL82"
 
-PREP TD
-COUNT
+COUNT PREP TD
 ⍤. =3
 
-UNFURL PREP TD
-COUNT
+COUNT STEPS PREP TD
 ⍤. =6
 
-PREP &fras "inputs/2025/day1.txt"
-⊃UNFURL∘
-∩COUNT
+&fras "inputs/2025/day1.txt"
+∩COUNT ⊃STEPS∘ PREP
 ∩&p
