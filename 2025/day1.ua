@@ -15,7 +15,7 @@ UNFURL PREP TD
 COUNT
 ⍤. =6
 
-PREP &fras "../../inputs/2025/day1.txt"
+PREP &fras "inputs/2025/day1.txt"
 ⊃UNFURL∘
 ∩COUNT
 ∩&p
