@@ -1,44 +1,24 @@
-PREP ← (
-  °$"_\n\n_"
-  ∩(⊜□⊸≠@\n)
-  ≡◇⊜⋕⊸≠@-⊙≡⋕
-)
-FREE    ← /+>0/+⍉ ˜⊞(×⊃(≤⊙⊢)(≥⊙⊣))
-CONT    ← ×⊃(≥⊢)(≤⊣)
-RCONT   ← >0+⊃(CONT⊙⊢)(CONT⊙⊣)
-OVERLAP ← >0+⊃RCONT˜RCONT
-COMB    ← ⊟⊙↥↧⊃∩/↧∩/↥∩°□
+PREP    ← ≡◇⊜⋕ ⊸≠@- ⊙≡⋕ ∩(⊜□⊸≠@\n) °$"_\n\n_"
+FREE    ← /+ >0 /+ ⍉ ˜⊞(× ⊃(≤⊙⊢) (≥⊙⊣))
+CONT    ← × ⊃(≥⊢) (≤⊣)
+RNGCONT ← >0 + ⊃(CONT⊙⊢) (CONT⊙⊣)
+OVERLAP ← >0 + ⊃RNGCONT ˜RNGCONT
+MERGE   ← ⊟ ⊙↥↧ ⊃∩/↧ ∩/↥ ∩°□
+OTHERS  ← ⊚¬⤚∊ ⊙(⇡⊸⧻)⊢
+RECOMB  ← ⊂ ⍜⊙¤≡⊡ ⊃⊙⋅∘⋅□
 ROUND ← (
   ⊸˙⊞◇OVERLAP
-  ⊚↧¬˙⊞≤⇡⊸⧻
-  >0⊸⧻
-  ⨬(◌
-  | ⊚¬⤚∊⊙(⇡⊸⧻)⊢
-    ⊸⊙(/COMB⍜⊙¤≡⊡)
-    ⊃⊙⋅∘⋅□
-    ⍜⊙¤≡⊡
-    ⊂)
+  >0⊸⧻ ⊚ ↧¬˙⊞≤ ⇡⊸⧻
+  ⨬(◌|RECOMB⊸⊙(/MERGE ⍜⊙¤≡⊡)OTHERS)
 )
-FRESH ← (
-  ≡□⊙[]
-  ◌⍢(⊸ROUND⊙◌|¬◡⍜∩□=)
-  +1≡◇/-
-  /+
-)
-INPUT ← PREP &fras "inputs/2025/day5.txt"
-TDA ← [[3 5]
-       [10 14]
-       [16 20]
-       [12 18]]
-TDB ← [1
-       5
-       8
-       11
-       17
-       32]
+COLLAPSE ← ◌⍢(⊸ROUND⊙◌|¬◡⍜∩□=) ≡□⊙[]
+FRESH    ← /+ +₁ ≡◇/- COLLAPSE
+INPUT    ← PREP &fras "inputs/2025/day5.txt"
+TDR      ← [3_5 10_14 16_20 12_18]
+TDN      ← [1 5 8 11 17 32]
 
-˙⍤ =3 FREE TDA TDB
-˙⍤ =14 FRESH TDA
+˙⍤ =3 FREE TDR TDN
+˙⍤ =14 FRESH TDR
 
 &p FREE INPUT
-&p FRESH INPUT
+&p FRESH ⍆⊙◌ INPUT
