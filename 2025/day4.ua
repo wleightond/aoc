@@ -1,10 +1,10 @@
-TRIM ← ↘₁↘₋₁≡(↘₁↘₋₁)
-NEAR ← TRIM ⬚@. ⧈□ 3_3
-ACC  ← × ≡≡◇(<4 /+ =@@ ⊂⊃↙₄↙₋₄♭)
-RM   ← ≡≡⨬(∘|⋅@.)
-ITER ← /+/+ ⟜RM ACC NEAR⤙=@@ ⊸∘ ◌
-LOOP ← ◌ ⍢(ITER|⊸>0) 1 ⊸∘
-DIFF ← - ∩/+ ∩/+ ∩(=@@)
+Trim ← ↘₁↘₋₁≡(↘₁↘₋₁)
+Near ← Trim ⬚@. ⧈□ 3_3
+Acc  ← × ≡≡◇(<4 /+ =@@ ⊂⊃↙₄↙₋₄♭)
+Rm   ← ≡≡⨬(∘|⋅@.)
+Iter ← /+/+ ⟜Rm Acc Near⤙=@@ ⊸∘ ◌
+Loop ← ◌ ⍢(Iter|⊸>0) 1 ⊸∘
+Diff ← - ∩/+ ∩/+ ∩(=@@)
 
 TD ← ["..@@.@@@@."
       "@@@.@.@.@@"
@@ -17,11 +17,11 @@ TD ← ["..@@.@@@@."
       ".@@@@@@@@."
       "@.@.@@@.@."]
 
-˙⍤ =13 /+/+ ACC NEAR ⤙=@@ TD
-˙⍤ =43 DIFF LOOP TD
+˙⍤ =13 /+/+ Acc Near ⤙=@@ TD
+˙⍤ =43 Diff Loop TD
 
 &fras "inputs/2025/day4.txt"
 ⊸∘ ⊜∘ ⊸≠ @\n
 
-&p /+/+ ACC NEAR ⤙=@@
-&p DIFF LOOP
+&p /+/+ Acc Near ⤙=@@
+&p Diff Loop

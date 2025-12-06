@@ -1,27 +1,27 @@
-PREPA ← (
+PrepA ← (
   ⊃⊣↘₋₁
   ⊙(⍉≡⊜⋕ ⊸≠ @ )
   ⊜□ ⊸≠ @ 
   ⊢⍉≡◇=@*
 )
-PREPB ← ⊜□ ¬≡/× ⊸≡(=@ )⍉
-PARSE ← ≡(
+PrepB ← ⊜□ ¬≡/× ⊸≡(=@ )⍉
+Parse ← ≡(
   ⟜(□⊜⋕ ⊸≠ @ ◇/$"_ _"⍚≡↘₋₁)
   =@*◇⊣◇⊢
 )
-APP ← ⨬(◇/+|◇/×)
+Calc ← ⨬(◇/+|◇/×)
 
 ["123 328  51 64 "
  " 45 64  387 23 "
  "  6 98  215 314"
  "*   +   *   +  "]
 
-PREPA⟜PREPB
-˙⍤ =4277556 /+ APP
-˙⍤ =3263827 /+ APP PARSE
+PrepA⟜PrepB
+˙⍤ =4277556 /+ Calc
+˙⍤ =3263827 /+ Calc Parse
 
 &fras "inputs/2025/day6.txt"
 ⊜∘ ⊸≠ @\n
-PREPA⟜PREPB
-&p /+ APP
-&p /+ APP PARSE
+PrepA⟜PrepB
+&p /+ Calc
+&p /+ Calc Parse

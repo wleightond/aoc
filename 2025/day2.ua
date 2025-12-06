@@ -1,20 +1,20 @@
-PARSE  ← ⊜(⊟∩⋕°$"_-_")⊸≠ @,
-FACTS  ← ↘₁▽⊸=⊸⁅÷+1⊸⇡⧻
-ISDUP  ← =⌊⊃÷◿ₑ₁₀⌈÷2⌊⊸°ₑ₁₀
-ISREP  ← ×⊃(>1⧻)(±/+≡/×=⊸≡↻⊙⋅¤⊃⋅∘⊸⧻) ⟜FACTS $"_"
-RANGES ← ⍚(⍜-⇡⊙+₁°⊟)
-FILT   ← /+≡◇/+ ⍚▽
+Parse  ← ⊜(⊟∩⋕°$"_-_")⊸≠ @,
+Facts  ← ↘₁▽⊸=⊸⁅÷+1⊸⇡⧻
+IsDup  ← =⌊⊃÷◿ₑ₁₀⌈÷2⌊⊸°ₑ₁₀
+IsRep  ← ×⊃(>1⧻)(±/+≡/×=⊸≡↻⊙⋅¤⊃⋅∘⊸⧻) ⟜Facts $"_"
+Ranges ← ⍚(⍜-⇡⊙+₁°⊟)
+Filt   ← /+≡◇/+ ⍚▽
 TD     ← "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124"
 
-PARSE TD
-FILT⊸⍚≡ISDUP RANGES
+Parse TD
+Filt⊸⍚≡IsDup Ranges
 ˙⍤ =1227775554
 
-PARSE TD
-FILT⊸⍚≡ISREP RANGES
+Parse TD
+Filt⊸⍚≡IsRep Ranges
 ˙⍤ =4174379265
 
-PARSE &fras "inputs/2025/day2.txt"
-RANGES
-&p⊸FILT⊸⍚≡ISDUP
-&p FILT⊸⍚≡ISREP
+Parse &fras "inputs/2025/day2.txt"
+Ranges
+&p⊸Filt⊸⍚≡IsDup
+&p Filt⊸⍚≡IsRep
