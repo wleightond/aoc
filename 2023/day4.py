@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-with open('day4-input.txt') as f:
+with open('inputs/2023/day4.txt') as f:
     data = [line.strip() for line in f.readlines()]
 
 get_card = lambda line: int(line.split(': ')[0].split()[-1]) - 1

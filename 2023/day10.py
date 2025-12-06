@@ -5,7 +5,7 @@ from day3 import box
 
 DEBUGGING = False
 
-with open('day10-input.txt') as f:
+with open('inputs/2023/day10.txt') as f:
     data = [
         list(line)
         for line in f.read().strip().split('\n')

@@ -3,7 +3,7 @@
 from functools import partial
 from random import choice
 
-with open('day25-input.txt') as f:
+with open('inputs/2023/day25.txt') as f:
     data = f.read().strip().split('\n')
 
 test_data = '''

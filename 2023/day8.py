@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from itertools import count, cycle, takewhile
 
-with open('day8-input.txt') as f:
+with open('inputs/2023/day8.txt') as f:
     data = [line.strip() for line in f.readlines()]
 
 

@@ -10,6 +10,6 @@ COUNT PARSE TD
 COUNT STEPS PARSE TD
 ⍤. =6
 
-⊜□⊸≠@\n &rs∞0
+⊜□⊸≠@\n &fras "inputs/2025/day1.txt"
 ∩COUNT ⊃STEPS∘ PARSE
 ∩&p

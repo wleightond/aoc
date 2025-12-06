@@ -11,7 +11,7 @@ part1_sample_data = [
 part1_sample_vals = list(map(calibr_val, part1_sample_data))
 assert part1_sample_vals == [12, 38, 15, 77]
 assert sum(part1_sample_vals) == 142
-with open('day1-input.txt') as f:
+with open('inputs/2023/day1.txt') as f:
     data = f.readlines()
 part1_vals = list(map(calibr_val, data))
 print(f'Part 1: {sum(part1_vals)}')

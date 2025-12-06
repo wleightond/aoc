@@ -20,7 +20,7 @@ def gen_pulses(node: dict[str, str]):
         case str(BROADCAST):
             print(f'found BROADCAST: {node}')
 
-with open('day20-input.txt') as f:
+with open('inputs/2023/day20.txt') as f:
     data = f.read().strip().split('\n')
 test_data_a = r'''
 broadcaster -> a, b, c

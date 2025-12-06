@@ -1,5 +1,5 @@
 # Experimental!
-&fras "input.txt"
+&fras "inputs/2024/day2.txt"
 ⊜□⊸≠@\n
 ≡⍜°□(⊜⋕⊸≠@ )
 # [

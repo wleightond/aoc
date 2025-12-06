@@ -3,7 +3,7 @@
 from math import prod
 
 if __name__ == "__main__":
-    with open('day3-input.txt') as f:
+    with open('inputs/2023/day3.txt') as f:
         data = [line.strip() for line in f.readlines()]
 
 base = lambda idx: max(idx-1, 0)

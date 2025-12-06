@@ -83,7 +83,7 @@ assert Hand('33332') > Hand('2AAAA')
 assert p1_hand_type(Hand('77888')) == p1_hand_type(Hand('77788')) == FULL_HOUSE
 assert Hand('77888') > Hand('77788')
 
-with open('day7-input.txt') as f:
+with open('inputs/2023/day7.txt') as f:
     data = [line.strip().split() for line in f.readlines()]
 
 test_data = [

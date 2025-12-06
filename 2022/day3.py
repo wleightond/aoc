@@ -46,7 +46,7 @@ assert test_priorities == [16, 38, 42, 22, 20, 19]
 assert sum(test_priorities) == 157
 
 
-with open('day3-input.txt') as f:
+with open('inputs/2022/day3.txt') as f:
     rucksacks = f.readlines()
     
 print(

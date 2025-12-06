@@ -40,7 +40,7 @@ def parse_part(pt):
         for k, v in map(partial(str.split, sep='='), pt[1:-1].split(','))
     }
 
-with open('day19-input.txt') as f:
+with open('inputs/2023/day19.txt') as f:
     workflow_data, part_data = f.read().split('\n\n')
 test_workflow_data, test_part_data = '''
 px{a<2006:qkq,m>2090:A,rfg}

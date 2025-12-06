@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-with open('day9-input.txt') as f:
+with open('inputs/2023/day9.txt') as f:
     data = [[int(i) for i in line.strip().split()] for line in f.readlines()]
 
 def rank(line):

@@ -1,4 +1,4 @@
-&fras "input.txt"
+&fras "inputs/2024/day1.txt"
 ≡⊜⋕⊸≠@ ⊜∘⊸≠@\n
 F ← /+⌵≡/-⍉⊟∩⍆≡⊃⊢⊣
 G ← /+×≡/+⤚⊞=°⊟⍉

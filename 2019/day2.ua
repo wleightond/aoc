@@ -2,7 +2,7 @@ Op     ← ⨂1_2_99⊢
 Instr  ← ⨬(↙₄|↙₄|↙₁)⊸Op◡˜↘
 Args   ← ⊏↙₂↘₁
 Insert ← ⍜⊙⊡ ⊙◌
-Store ← Insert ⊙(⊏3)
+Store  ← Insert ⊙(⊏3)
 
 Add ← Store /+ ◡Args
 Mul ← Store /× ◡Args
@@ -15,7 +15,7 @@ Run      ← ⊙◌◌⍢(⍣⊙Step¬|∘) 1 ⊙0
 GetProg  ← ⊜⋕ ⊸≠@,
 WithArgs ← Insert⊙1⊙(Insert⊙2)
 
-&fras "input.txt"
+&fras "inputs/2019/day2.txt"
 GetProg
 ⟜□
 

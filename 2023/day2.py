@@ -4,7 +4,7 @@ from functools import reduce
 from math import prod
 
 
-with open('day2-input.txt') as f:
+with open('inputs/2023/day2.txt') as f:
     data = [line.strip() for line in f.readlines()]
 game_id = lambda game: int(game[5:game.index(':')])
 c2d = lambda s: {k: int(v) for v, k in map(str.split, s.split(', '))}

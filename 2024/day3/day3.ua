@@ -1,8 +1,7 @@
-&fras "input.txt"
-regex "mul\\((\\d+),(\\d+)\\)"
+&fras "inputs/2024/day3.txt"
+⊸regex "mul\\((\\d+),(\\d+)\\)"
 &p /+ ≡(/× ⋕ ↘₁)
 
-&fras "input.txt"
 ⬚"0"regex "mul\\((\\d+),(\\d+)\\)|do\\(\\)|don't\\(\\)"
 ⊸≡⊢
 ≡(

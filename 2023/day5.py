@@ -2,7 +2,7 @@
 from functools import reduce
 from more_itertools import batched
 
-with open('day5-input.txt') as f:
+with open('inputs/2023/day5.txt') as f:
     data = f.read().split('\n\n')
 
 test_data = """seeds: 79 14 55 13

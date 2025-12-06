@@ -2,7 +2,7 @@ from pathlib import Path
 
 data = [
     [*map(int, line.split())]
-    for line in Path('input.txt').read_text().strip().split('\n')
+    for line in Path('inputs/2024/day2.txt').read_text().strip().split('\n')
 ]
 
 # data = [

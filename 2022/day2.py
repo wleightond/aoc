@@ -43,7 +43,7 @@ test_moves_pt1 = [
 ]
 assert sum(map(round_score, test_moves_pt1)) == 15
 
-with open('day2-input.txt') as f:
+with open('inputs/2022/day2.txt') as f:
     strategy_guide = f.read().strip().split('\n')
 
 moves_pt1 = [

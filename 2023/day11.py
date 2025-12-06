@@ -18,7 +18,7 @@ test_data = '''
 .......#..
 #...#.....
 '''.strip().split()
-with open('day11-input.txt') as f:
+with open('inputs/2023/day11.txt') as f:
     data = [line.strip() for line in f.readlines()]
 
 def expand_rows(lines):
